@@ -122,14 +122,14 @@
         // if the data is scaled using log scale
         let logScale = d3.scaleLog().domain(
           d3.extent(geojson.features, (d) => {
-            return d["properties"]["POP00-10"];
+            return d["properties"]["POPCH00_10"];
           })
         );
 
         // if the data is scaled using linear scale
         let linearScale = d3.scaleLinear().domain(
           d3.extent(geojson.features, (d) => {
-            return d["properties"]["POP00-10"];
+            return d["properties"]["POPCH00_10"];
           })
         );
 
