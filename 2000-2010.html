@@ -157,7 +157,7 @@
           .attr("d", (d) => geoPath_generator(d))
           //.attr("fill", d => colorInterpolator(logScale(d['properties']['POP2010'])))
           .attr("fill", (d) =>
-            colorInterpolator(linearScale(d["properties"]["POP00-10"]))
+            colorInterpolator(linearScale(d["properties"]["POPCH00_10"]))
           )
           .on("mouseenter", (m, d) => {
             tooltip.transition().duration(200).style("opacity", 0.9);
